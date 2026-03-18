@@ -291,7 +291,11 @@ def main(argv: Optional[list[str]] = None) -> int:
         df["Email Domain"] = emails.where(emails.str.contains("@"), "").str.split("@").str[-1].str.lower()
 
     if args.add_connected_iso and "Connected On" in df.columns:
-        dt = pd.to_datetime(df["Connected On"], errors="coerce")
+        dt = pd.to_datetime(
+    df["Connected On"],
+    format="%m/%d/%Y",
+    errors="coerce"
+)
         df["Connected On ISO"] = dt.dt.date.astype("string")
 
     if args.message_template:
