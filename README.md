@@ -29,18 +29,6 @@ flowchart LR
 
 ---
 
-## 🖼️ Visual Workflow (Optional but Recommended)
-
-Add your own screenshots to `/docs/images/`
-
-```markdown
-![Pipeline](docs/images/pipeline.png)
-![Windows PATH](docs/images/windows-path.png)
-![Output Example](docs/images/output-clean.png)
-```
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -124,7 +112,7 @@ python linkedin_connections.py ^
 
 ```powershell
 python linkedin_connections.py ^
-  --input "C:\Users\12242\Documents\Desktop\Severance Support\linkedinConnections\Connections.csv" ^
+  --input "C:\Users\12242\Documents\Desktop\linkedinConnections\Connections.csv" ^
   --outdir "out" ^
   --export clean ^
   --export recruiters ^
@@ -157,7 +145,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; `
 .\.venv\Scripts\Activate.ps1; `
 pip install -U pip; `
 pip install pandas openpyxl; `
-python linkedin_connections.py --input "C:\Users\12242\Documents\Desktop\Severance Support\linkedinConnections\Connections.csv" --outdir "out" --export clean --export recruiters --export crm --add-full-name --dedupe
+python linkedin_connections.py --input "C:\Users\12242\Documents\Desktop\linkedinConnections\Connections.csv" --outdir "out" --export clean --export recruiters --export crm --add-full-name --dedupe
 ```
 
 ---
@@ -194,7 +182,7 @@ python "%SCRIPT_DIR%\linkedin_connections.py" %*
 3. Add:
 
 ```
-C:\Users\12242\Documents\Desktop\Severance Support\linkedinConnections\bin
+C:\Users\12242\Documents\Desktop\linkedinConnections\bin
 ```
 
 4. Restart terminal
