@@ -120,9 +120,9 @@ python linkedin_connections.py ^
   --add-full-name ^
   --add-email-domain ^
   --add-connected-iso ^
-  --dedupe
+  
 
-python .\linkedin_connections.py --input "C:\Users\12242\Documents\Desktop\linkedinConnections\Connections.csv" --outdir "out" --export clean --export recruiters --export crm --add-full-name --add-email-domain --add-connected-iso --dedupe
+python .\linkedin_connections.py --input "C:\Users\12242\Documents\Desktop\linkedinConnections\Connections.csv" --outdir "out" --export clean --export recruiters --export crm --add-full-name --add-email-domain --add-connected-iso 
 
 ```
 
